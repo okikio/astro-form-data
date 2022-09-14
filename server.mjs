@@ -17,7 +17,7 @@ app.post('/cool-profile', upload.array('files'), function (req, res, next) {
   //  req.files['gallery'] -> Array
   //
   // req.body will contain the text fields, if there were any
-  res.json({ fileNames: req.files.map((file) => file.originalname) });
+  res.json({ fileNames: req.files });
 });
 
 app.listen(8080);
