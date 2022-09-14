@@ -13,7 +13,8 @@ btn.addEventListener('click', async (e: MouseEvent) => {
           type: 'text/plain',
         }),
       ],
-      'new-file.txt'
+      'new-file.txt',
+      { type: 'text/plain' }
     )
   );
 
